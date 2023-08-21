@@ -229,7 +229,7 @@ $loadBalancerConfigParams = @{
     Name = $csName + '_LB'
 }
 $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject @loadBalancerConfigParams
-$networkProfile = New-Object Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.CloudServiceNetworkProfile
+$networkProfile = New-Object Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20220904.CloudServiceNetworkProfile
 
 # Set the network profile's load balancer configuration and swappable cloud service ID.
 $networkProfile.LoadBalancerConfiguration = $loadBalancerConfig 
